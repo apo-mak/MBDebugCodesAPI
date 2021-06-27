@@ -109,3 +109,4 @@ F8,Recovery PPI is invalid.,Error
 F9,Recovery capsule is not found.,Error
 FA,Invalid recovery capsule.,Error
 FB~FF,Reserved.,Error
+
