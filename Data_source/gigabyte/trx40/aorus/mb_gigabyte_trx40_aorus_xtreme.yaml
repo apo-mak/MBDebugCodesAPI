@@ -1,0 +1,441 @@
+---
+-
+    Code: 10
+    Description: PEI Core is started.
+    Type: Regular Boot
+-
+    Code: 11
+    Description: Pre-memory CPU initialization is started.
+    Type: Regular Boot
+-
+    Code: 12~14
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: 15
+    Description: Pre-memory North-Bridge initialization is started.
+    Type: Regular Boot
+-
+    Code: 16~18
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: 19
+    Description: Pre-memory South-Bridge initialization is started.
+    Type: Regular Boot
+-
+    Code: 1A~2A
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: 2B~2F
+    Description: Memory initialization.
+    Type: Regular Boot
+-
+    Code: 31
+    Description: Memory installed.
+    Type: Regular Boot
+-
+    Code: 32~36
+    Description: CPU PEI initialization.
+    Type: Regular Boot
+-
+    Code: 37~3A
+    Description: IOH PEI initialization.
+    Type: Regular Boot
+-
+    Code: 3B~3E
+    Description: PCH PEI initialization.
+    Type: Regular Boot
+-
+    Code: 3F~4F
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: 60
+    Description: DXE Core is started.
+    Type: Regular Boot
+-
+    Code: 61
+    Description: NVRAM initialization.
+    Type: Regular Boot
+-
+    Code: 62
+    Description: Installation of the PCH runtime services.
+    Type: Regular Boot
+-
+    Code: 63~67
+    Description: CPU DXE initialization is started.
+    Type: Regular Boot
+-
+    Code: 68
+    Description: PCI host bridge initialization is started.
+    Type: Regular Boot
+-
+    Code: 69
+    Description: IOH DXE initialization.
+    Type: Regular Boot
+-
+    Code: 6A
+    Description: IOH SMM initialization.
+    Type: Regular Boot
+-
+    Code: 6B~6F
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: 70
+    Description: PCH DXE initialization.
+    Type: Regular Boot
+-
+    Code: 71
+    Description: PCH SMM initialization.
+    Type: Regular Boot
+-
+    Code: 72
+    Description: PCH devices initialization.
+    Type: Regular Boot
+-
+    Code: 73~77
+    Description: PCH DXE initialization (PCH module specific).
+    Type: Regular Boot
+-
+    Code: 78
+    Description: ACPI Core initialization.
+    Type: Regular Boot
+-
+    Code: 79
+    Description: CSM initialization is started.
+    Type: Regular Boot
+-
+    Code: 7A~7F
+    Description: Reserved for AMI use.
+    Type: Regular Boot
+-
+    Code: 80~8F
+    Description: Reserved for OEM use (OEM DXE initialization codes).
+    Type: Regular Boot
+-
+    Code: 90
+    Description: Phase transfer to BDS (Boot Device Selection) from DXE.
+    Type: Regular Boot
+-
+    Code: 91
+    Description: Issue event to connect drivers.
+    Type: Regular Boot
+-
+    Code: 92
+    Description: PCI Bus initialization is started.
+    Type: Regular Boot
+-
+    Code: 93
+    Description: PCI Bus hot plug initialization.
+    Type: Regular Boot
+-
+    Code: 94
+    Description: PCI Bus enumeration for detecting how many resources are requested.
+    Type: Regular Boot
+-
+    Code: 95
+    Description: Check PCI device requested resources.
+    Type: Regular Boot
+-
+    Code: 96
+    Description: Assign PCI device resources.
+    Type: Regular Boot
+-
+    Code: 97
+    Description: Console Output devices connect (ex. Monitor is lighted).
+    Type: Regular Boot
+-
+    Code: 98
+    Description: Console input devices connect (ex. PS2/USB keyboard/mouse are activated).
+    Type: Regular Boot
+-
+    Code: 99
+    Description: Super IO initialization.
+    Type: Regular Boot
+-
+    Code: 9A
+    Description: USB initialization is started.
+    Type: Regular Boot
+-
+    Code: 9B
+    Description: Issue reset during USB initialization process.
+    Type: Regular Boot
+-
+    Code: 9C
+    Description: Detect and install all currently connected USB devices.
+    Type: Regular Boot
+-
+    Code: 9D
+    Description: Activated all currently connected USB devices.
+    Type: Regular Boot
+-
+    Code: 9E~9F
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: A0
+    Description: IDE initialization is started.
+    Type: Regular Boot
+-
+    Code: A1
+    Description: Issue reset during IDE initialization process.
+    Type: Regular Boot
+-
+    Code: A2
+    Description: Detect and install all currently connected IDE devices.
+    Type: Regular Boot
+-
+    Code: A3
+    Description: Activated all currently connected IDE devices.
+    Type: Regular Boot
+-
+    Code: A4
+    Description: SCSI initialization is started.
+    Type: Regular Boot
+-
+    Code: A5
+    Description: Issue reset during SCSI initialization process.
+    Type: Regular Boot
+-
+    Code: A6
+    Description: Detect and install all currently connected SCSI devices.
+    Type: Regular Boot
+-
+    Code: A7
+    Description: Activated all currently connected SCSI devices.
+    Type: Regular Boot
+-
+    Code: A8
+    Description: Verify password if needed.
+    Type: Regular Boot
+-
+    Code: A9
+    Description: BIOS Setup is started.
+    Type: Regular Boot
+-
+    Code: AA
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: AB
+    Description: Wait user command in BIOS Setup.
+    Type: Regular Boot
+-
+    Code: AC
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: AD
+    Description: Issue Ready To Boot event for OS Boot.
+    Type: Regular Boot
+-
+    Code: AE
+    Description: Boot to Legacy OS.
+    Type: Regular Boot
+-
+    Code: AF
+    Description: Exit Boot Services.
+    Type: Regular Boot
+-
+    Code: B0
+    Description: Runtime AP installation begins.
+    Type: Regular Boot
+-
+    Code: B1
+    Description: Runtime AP installation ends.
+    Type: Regular Boot
+-
+    Code: B2
+    Description: Legacy Option ROM initialization.
+    Type: Regular Boot
+-
+    Code: B3
+    Description: System reset if needed.
+    Type: Regular Boot
+-
+    Code: B4
+    Description: USB device hot plug-in.
+    Type: Regular Boot
+-
+    Code: B5
+    Description: PCI device hot plug.
+    Type: Regular Boot
+-
+    Code: B6
+    Description: Clean-up of NVRAM.
+    Type: Regular Boot
+-
+    Code: B7
+    Description: Reconfigure NVRAM settings.
+    Type: Regular Boot
+-
+    Code: B8~BF
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: C0~CF
+    Description: Reserved.
+    Type: Regular Boot
+-
+    Code: E0
+    Description: S3 Resume is started (called from DXE IPL).
+    Type: S3 Resume
+-
+    Code: E1
+    Description: Fill boot script data for S3 resume.
+    Type: S3 Resume
+-
+    Code: E2
+    Description: Initializes VGA for S3 resume.
+    Type: S3 Resume
+-
+    Code: E3
+    Description: OS S3 wake vector call.
+    Type: S3 Resume
+-
+    Code: F0
+    Description: Recovery mode will be triggered due to invalid firmware volume detection.
+    Type: Recovery
+-
+    Code: F1
+    Description: Recovery mode will be triggered by user decision.
+    Type: Recovery
+-
+    Code: F2
+    Description: Recovery is started.
+    Type: Recovery
+-
+    Code: F3
+    Description: Recovery firmware image is found.
+    Type: Recovery
+-
+    Code: F4
+    Description: Recovery firmware image is loaded.
+    Type: Recovery
+-
+    Code: F5~F7
+    Description: Reserved for future AMI progress codes.
+    Type: Recovery
+-
+    Code: 50~55
+    Description: Memory initialization error occurs.
+    Type: Error
+-
+    Code: 56
+    Description: Invalid CPU type or speed.
+    Type: Error
+-
+    Code: 57
+    Description: CPU mismatch.
+    Type: Error
+-
+    Code: 58
+    Description: CPU self test failed or possible CPU cache error.
+    Type: Error
+-
+    Code: 59
+    Description: CPU micro-code is not found or micro-code update is failed.
+    Type: Error
+-
+    Code: 5A
+    Description: Internal CPU error.
+    Type: Error
+-
+    Code: 5B
+    Description: Reset PPI is failed.
+    Type: Error
+-
+    Code: 5C~5F
+    Description: Reserved.
+    Type: Error
+-
+    Code: D0
+    Description: CPU initialization error.
+    Type: Error
+-
+    Code: D1
+    Description: IOH initialization error.
+    Type: Error
+-
+    Code: D2
+    Description: PCH initialization error.
+    Type: Error
+-
+    Code: D3
+    Description: Some of the Architectural Protocols are not available.
+    Type: Error
+-
+    Code: D4
+    Description: PCI resource allocation error. Out of Resources.
+    Type: Error
+-
+    Code: D5
+    Description: No Space for Legacy Option ROM initialization.
+    Type: Error
+-
+    Code: D6
+    Description: No Console Output Devices are found.
+    Type: Error
+-
+    Code: D7
+    Description: No Console Input Devices are found.
+    Type: Error
+-
+    Code: D8
+    Description: It is an invalid password.
+    Type: Error
+-
+    Code: D9~DA
+    Description: 'Can''t load Boot Option.'
+    Type: Error
+-
+    Code: DB
+    Description: Flash update is failed.
+    Type: Error
+-
+    Code: DC
+    Description: Reset protocol is failed.
+    Type: Error
+-
+    Code: DE~DF
+    Description: Reserved.
+    Type: Error
+-
+    Code: E8
+    Description: S3 resume is failed.
+    Type: Error
+-
+    Code: E9
+    Description: S3 Resume PPI is not found.
+    Type: Error
+-
+    Code: EA
+    Description: S3 Resume Boot Script is invalid.
+    Type: Error
+-
+    Code: EB
+    Description: S3 OS Wake call is failed.
+    Type: Error
+-
+    Code: EC~EF
+    Description: Reserved.
+    Type: Error
+-
+    Code: F8
+    Description: Recovery PPI is invalid.
+    Type: Error
+-
+    Code: F9
+    Description: Recovery capsule is not found.
+    Type: Error
+-
+    Code: FA
+    Description: Invalid recovery capsule.
+    Type: Error
+-
+    Code: FB~FF
+    Description: Reserved.
+    Type: Error

@@ -3,6 +3,6 @@
   "main": "index.js",
   "dependencies": {
     "deepmerge": "^4.2.2",
-    "static-api-generator": "eduardoboucas/static-api-generator"
+    "static-api-generator": "^2.0.0"
   }
 }
