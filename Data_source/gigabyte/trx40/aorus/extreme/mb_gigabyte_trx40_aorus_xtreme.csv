@@ -1,0 +1,111 @@
+﻿Code,Description,Type
+10,PEI Core is started.,Regular Boot
+11,Pre-memory CPU initialization is started.,Regular Boot
+12~14,Reserved.,Regular Boot
+15,Pre-memory North-Bridge initialization is started.,Regular Boot
+16~18,Reserved.,Regular Boot
+19,Pre-memory South-Bridge initialization is started.,Regular Boot
+1A~2A,Reserved.,Regular Boot
+2B~2F,Memory initialization.,Regular Boot
+31,Memory installed.,Regular Boot
+32~36,CPU PEI initialization.,Regular Boot
+37~3A,IOH PEI initialization.,Regular Boot
+3B~3E,PCH PEI initialization.,Regular Boot
+3F~4F,Reserved.,Regular Boot
+60,DXE Core is started.,Regular Boot
+61,NVRAM initialization.,Regular Boot
+62,Installation of the PCH runtime services.,Regular Boot
+63~67,CPU DXE initialization is started.,Regular Boot
+68,PCI host bridge initialization is started.,Regular Boot
+69,IOH DXE initialization.,Regular Boot
+6A,IOH SMM initialization.,Regular Boot
+6B~6F,Reserved.,Regular Boot
+70,PCH DXE initialization.,Regular Boot
+71,PCH SMM initialization.,Regular Boot
+72,PCH devices initialization.,Regular Boot
+73~77,PCH DXE initialization (PCH module specific).,Regular Boot
+78,ACPI Core initialization.,Regular Boot
+79,CSM initialization is started.,Regular Boot
+7A~7F,Reserved for AMI use.,Regular Boot
+80~8F,Reserved for OEM use (OEM DXE initialization codes).,Regular Boot
+90,Phase transfer to BDS (Boot Device Selection) from DXE.,Regular Boot
+91,Issue event to connect drivers.,Regular Boot
+92,PCI Bus initialization is started.,Regular Boot
+93,PCI Bus hot plug initialization.,Regular Boot
+94,PCI Bus enumeration for detecting how many resources are requested.,Regular Boot
+95,Check PCI device requested resources.,Regular Boot
+96,Assign PCI device resources.,Regular Boot
+97,Console Output devices connect (ex. Monitor is lighted).,Regular Boot
+98,Console input devices connect (ex. PS2/USB keyboard/mouse are activated).,Regular Boot
+99,Super IO initialization.,Regular Boot
+9A,USB initialization is started.,Regular Boot
+9B,Issue reset during USB initialization process.,Regular Boot
+9C,Detect and install all currently connected USB devices.,Regular Boot
+9D,Activated all currently connected USB devices.,Regular Boot
+9E~9F,Reserved.,Regular Boot
+A0,IDE initialization is started.,Regular Boot
+A1,Issue reset during IDE initialization process.,Regular Boot
+A2,Detect and install all currently connected IDE devices.,Regular Boot
+A3,Activated all currently connected IDE devices.,Regular Boot
+A4,SCSI initialization is started.,Regular Boot
+A5,Issue reset during SCSI initialization process.,Regular Boot
+A6,Detect and install all currently connected SCSI devices.,Regular Boot
+A7,Activated all currently connected SCSI devices.,Regular Boot
+A8,Verify password if needed.,Regular Boot
+A9,BIOS Setup is started.,Regular Boot
+AA,Reserved.,Regular Boot
+AB,Wait user command in BIOS Setup.,Regular Boot
+AC,Reserved.,Regular Boot
+AD,Issue Ready To Boot event for OS Boot.,Regular Boot
+AE,Boot to Legacy OS.,Regular Boot
+AF,Exit Boot Services.,Regular Boot
+B0,Runtime AP installation begins.,Regular Boot
+B1,Runtime AP installation ends.,Regular Boot
+B2,Legacy Option ROM initialization.,Regular Boot
+B3,System reset if needed.,Regular Boot
+B4,USB device hot plug-in.,Regular Boot
+B5,PCI device hot plug.,Regular Boot
+B6,Clean-up of NVRAM.,Regular Boot
+B7,Reconfigure NVRAM settings.,Regular Boot
+B8~BF,Reserved.,Regular Boot
+C0~CF,Reserved.,Regular Boot
+E0,S3 Resume is started (called from DXE IPL).,S3 Resume
+E1,Fill boot script data for S3 resume.,S3 Resume
+E2,Initializes VGA for S3 resume.,S3 Resume
+E3,OS S3 wake vector call.,S3 Resume
+F0,Recovery mode will be triggered due to invalid firmware volume detection.,Recovery
+F1,Recovery mode will be triggered by user decision.,Recovery
+F2,Recovery is started.,Recovery
+F3,Recovery firmware image is found.,Recovery
+F4,Recovery firmware image is loaded.,Recovery
+F5~F7,Reserved for future AMI progress codes.,Recovery
+50~55,Memory initialization error occurs.,Error
+56,Invalid CPU type or speed.,Error
+57,CPU mismatch.,Error
+58,CPU self test failed or possible CPU cache error.,Error
+59,CPU micro-code is not found or micro-code update is failed.,Error
+5A,Internal CPU error.,Error
+5B,Reset PPI is failed.,Error
+5C~5F,Reserved.,Error
+D0,CPU initialization error.,Error
+D1,IOH initialization error.,Error
+D2,PCH initialization error.,Error
+D3,Some of the Architectural Protocols are not available.,Error
+D4,PCI resource allocation error. Out of Resources.,Error
+D5,No Space for Legacy Option ROM initialization.,Error
+D6,No Console Output Devices are found.,Error
+D7,No Console Input Devices are found.,Error
+D8,It is an invalid password.,Error
+D9~DA,Can't load Boot Option.,Error
+DB,Flash update is failed.,Error
+DC,Reset protocol is failed.,Error
+DE~DF,Reserved.,Error
+E8,S3 resume is failed.,Error
+E9,S3 Resume PPI is not found.,Error
+EA,S3 Resume Boot Script is invalid.,Error
+EB,S3 OS Wake call is failed.,Error
+EC~EF,Reserved.,Error
+F8,Recovery PPI is invalid.,Error
+F9,Recovery capsule is not found.,Error
+FA,Invalid recovery capsule.,Error
+FB~FF,Reserved.,Error
